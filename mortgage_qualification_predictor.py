@@ -14,7 +14,7 @@ from tensorflow.keras.models import load_model
 import joblib
 
 # Load the fitted preprocessor
-preprocessor = joblib.load('/Users/akulahluwalia/Downloads/preprocessor.pkl')
+preprocessor = joblib.load('preprocessor.pkl')
 
 # Define the Streamlit app
 def main():
@@ -67,7 +67,7 @@ def main():
     processed_input = preprocessor.transform(input_data)
 
     # Load the pre-trained machine learning model
-    model = load_model('/Users/akulahluwalia/Downloads/mortgage_qualification_predictor.h5')
+    model = load_model('mortgage_qualification_predictor.h5')
 
     # Make predictions when the Predict button is clicked
     if st.button("Predict"):
