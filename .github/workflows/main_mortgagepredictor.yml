@@ -31,5 +31,5 @@ jobs:
         run: |
           az webapp up --name <app_name> --resource-group <resource_group_name> --runtime "PYTHON:3.8"
         env:
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7C2936EF7CFB4714A9509427AA017232 }}
-          AZURE_TENANT_ID: ${{ secrets.AZUREAPPSERVICE_TENANTID_7639B806AB76438E87253788F97BC7CE }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
