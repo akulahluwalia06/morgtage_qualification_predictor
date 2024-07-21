@@ -29,7 +29,4 @@ jobs:
 
       - name: Deploy to Azure Web App
         run: |
-          az webapp up --name <app_name> --resource-group <resource_group_name> --runtime "PYTHON:3.8"
-        env:
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          az webapp up --name mortgagepredictor --resource-group mortgage_predictor_app --runtime "PYTHON:3.8"
