@@ -14,7 +14,7 @@ from tensorflow.keras.models import load_model
 import joblib
 
 # Load the fitted preprocessor
-preprocessor = joblib.load('/home/azureuser/preprocessor.pkl')
+preprocessor = joblib.load('/home/azureuser/morgtage_qualification_predictor/preprocessor.pkl')
 
 # Define the Streamlit app
 def main():
