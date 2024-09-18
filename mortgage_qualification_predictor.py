@@ -67,7 +67,7 @@ def main():
     processed_input = preprocessor.transform(input_data)
 
     # Load the pre-trained machine learning model
-    model = tf.keras.models.load_model('/home/azureuser/morgtage_qualification_predictor/mortgage_qualification_predictor.h5')
+    model = tensorflow.keras.models.load_model('/home/azureuser/morgtage_qualification_predictor/mortgage_qualification_predictor.h5')
 
     # Make predictions when the Predict button is clicked
     if st.button("Predict"):
