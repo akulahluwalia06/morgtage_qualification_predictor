@@ -10,7 +10,8 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import numpy as np
-from tensorflow.keras.models as tf import load_model
+import tensorflow as tf
+from tensorflow.keras.models import load_model
 import joblib
 
 # Load the fitted preprocessor
